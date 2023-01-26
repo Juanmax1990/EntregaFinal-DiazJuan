@@ -144,20 +144,21 @@ section {
   text-align: center;
   font-family: "Raleway";
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   #club {
     height: 500px;
   }
 }
 
 .video__yt {
+  display: inline;
   z-index: 1;
   width: 70%;
   height: 200px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 425px) {
   .video__yt {
-    height: 450px;
+    height: 300px;
   }
 }
 .video__yt h2 {
@@ -165,21 +166,41 @@ section {
   text-transform: capitalize;
 }
 
+.hometexto {
+  text-align: center;
+}
+
 .mapa {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+}
+
+.maps {
+  width: 30%;
+  height: 50%;
 }
 
 /*sobrenosotros*/
-#nosotros h3 {
+.nuestrainfo h2 {
+  text-align: left;
+}
+.nuestrainfo p {
   text-align: center;
+}
+.nuestrainfo .fotomc img {
+  display: block;
+  margin: auto;
+  width: 300px;
 }
 
 /*Carrousel*/
 #fotostennis {
   width: 60%;
   margin-left: 20%;
+}
+
+.carrusel {
+  text-decoration: none;
 }
 
 .d-block {
@@ -190,8 +211,8 @@ section {
 .contenedor {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   height: 100vh;
   z-index: 1;
 }
@@ -199,7 +220,6 @@ section {
 .contenedor figure {
   position: relative;
   height: 250px;
-  cursor: pointer;
   width: 350px;
   overflow: hidden;
   border-radius: 6px;
@@ -297,7 +317,6 @@ table tr td {
   grid-gap: 50px;
   margin-top: 90px;
 }
-
 .container-form h2 {
   margin-bottom: 15px;
   font-size: 35px;
