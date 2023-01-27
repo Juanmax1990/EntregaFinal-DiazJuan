@@ -12,6 +12,7 @@
 
 body{
     background: linear-gradient(to left, #f46b45, #eea849);
+    text-decoration: none;
 }
 /*Nav*/
 
@@ -50,6 +51,7 @@ nav ul{
             border-radius: 3px;
             text-transform: uppercase;
             z-index: 4;
+            text-decoration: none;
         }
     }
 }
@@ -171,6 +173,9 @@ section{
       
     }
     
+    @media (min-width:1400px){
+        height:50px;
+      }
    
     h2{
         text-align: center;

@@ -10,6 +10,7 @@
 
 body {
   background: linear-gradient(to left, #f46b45, #eea849);
+  text-decoration: none;
 }
 
 /*Nav*/
@@ -49,6 +50,7 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
   z-index: 4;
+  text-decoration: none;
 }
 
 li a.active, li a:hover {
@@ -154,6 +156,11 @@ section {
 @media (min-width: 425px) {
   .video__yt {
     height: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .video__yt {
+    height: 50px;
   }
 }
 .video__yt h2 {
