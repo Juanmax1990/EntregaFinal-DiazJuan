@@ -130,7 +130,7 @@ section {
 .fotoini img {
   width: 100%;
   margin-top: 0px;
-  height: 200px;
+  height: 250px;
 }
 @media (min-width: 1025px) {
   .fotoini img {
@@ -142,11 +142,6 @@ section {
 #club {
   text-align: center;
   font-family: "Raleway";
-}
-@media (min-width: 1024px) {
-  #club {
-    height: 300px;
-  }
 }
 
 .video__yt {
@@ -164,6 +159,11 @@ section {
 .video__yt h2 {
   text-align: center;
   text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  .video__yt {
+    height: 300px;
+  }
 }
 
 .hometexto {
@@ -184,7 +184,7 @@ section {
 .nuestrainfo h2 {
   text-align: left;
   text-decoration: underline;
-  color: cadetblue;
+  color: lawngreen;
 }
 .nuestrainfo p {
   text-align: center;
@@ -192,7 +192,7 @@ section {
 .nuestrainfo .fotomc img {
   display: block;
   margin: auto;
-  width: 300px;
+  width: 150px;
 }
 
 /*Carrousel*/
@@ -301,6 +301,30 @@ section {
 }
 
 /*Tienda*/
+.tienda {
+  text-align: center;
+  -webkit-animation: darkgreen 1500ms ease infinite;
+          animation: darkgreen 1500ms ease infinite;
+  background-color: white;
+}
+
+@-webkit-keyframes darkgreen {
+  from {
+    color: red;
+  }
+  to {
+    color: darkgreen;
+  }
+}
+
+@keyframes darkgreen {
+  from {
+    color: red;
+  }
+  to {
+    color: darkgreen;
+  }
+}
 .table {
   margin-top: 15px;
   background-color: whitesmoke;
@@ -344,30 +368,6 @@ section {
   color: crimson;
 }
 
-.tienda {
-  text-align: center;
-  -webkit-animation: darkgreen 1500ms ease infinite;
-          animation: darkgreen 1500ms ease infinite;
-  background-color: white;
-}
-
-@-webkit-keyframes darkgreen {
-  from {
-    color: red;
-  }
-  to {
-    color: darkgreen;
-  }
-}
-
-@keyframes darkgreen {
-  from {
-    color: red;
-  }
-  to {
-    color: darkgreen;
-  }
-}
 /*contacto*/
 .hero-page {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/restaurante-page-bg.jpg) center;
@@ -398,6 +398,15 @@ section {
 }
 
 /* Formulario */
+.column-half {
+  width: 63%;
+}
+
+@media (min-width: 768px) {
+  .column-half {
+    width: 90%;
+  }
+}
 .formulario {
   display: flex;
   flex-flow: column;

@@ -141,7 +141,7 @@ section{
     img{
       width: 100%;
       margin-top: 0px;
-      height: 200px; 
+      height: 250px; 
       @media (min-width: 1025px){
         height: 400px;
         
@@ -157,10 +157,7 @@ section{
     text-align: center;
     font-family: "Raleway";
    
-    @media (min-width:1024px){
-      height: 300px;
-    }
-  }
+}
   
   .video__yt{
     display: inline;
@@ -179,6 +176,10 @@ section{
         text-align: center;
         text-transform: capitalize;
     }
+
+    @media (min-width:1024px){
+        height: 300px;
+      }
   }
 
 .hometexto{
@@ -202,7 +203,7 @@ section{
     h2{
         text-align: left;
         text-decoration: underline;
-        color: cadetblue;
+        color:lawngreen;
     }
     p{
         text-align: center;
@@ -214,7 +215,7 @@ section{
     img{
         display: block;
         margin: auto;
-        width: 300px;
+        width: 150px;
         }
     }
 }
@@ -226,6 +227,7 @@ section{
     margin-left: 20%;
 
 }
+
 .carrusel{
     text-decoration: none;
 }
@@ -240,6 +242,7 @@ section{
     font-size: x-large;
     text-align: center;
     background: linear-gradient(to left, red, #eea849) 
+      
 }
 
 
@@ -327,6 +330,24 @@ section{
 
 /*Tienda*/
 
+.tienda{
+
+    text-align: center;
+    animation: darkgreen 1500ms ease infinite;
+    background-color: white;
+  }
+
+  @keyframes darkgreen {
+    
+    from{
+        color: red;
+    }
+    
+    to{
+        color:darkgreen;
+    }
+  }
+  
 .table {
     
     margin-top: 15px;
@@ -382,26 +403,9 @@ section{
       
 }
 
-.tienda{
 
-    text-align: center;
-    animation: darkgreen 1500ms ease infinite;
-    background-color: white;
-  }
-
-  @keyframes darkgreen {
-    
-    from{
-        color: red;
-    }
-    
-    to{
-        color:darkgreen;
-    }
-  }
   /*contacto*/
 
-  
   .hero-page{
     background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(img/restaurante-page-bg.jpg) center;
     background-size: cover;
@@ -411,6 +415,8 @@ section{
     justify-content: center;
     align-items: center;
   }
+
+ 
   .wrap-hero-page{
     color: #fff;
     padding: 1rem;
@@ -421,7 +427,7 @@ section{
     margin: 3rem auto;
     padding: 1rem;
   }
-  
+    
   .wrap-two-column{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -430,7 +436,17 @@ section{
   
   
   /* Formulario */
-  
+  .column-half{
+    width: 63%;
+  }
+
+  @media (min-width:768px){
+    .column-half{
+    width:90%;
+    }
+    
+  }
+
   .formulario{
     display: flex;
     flex-flow: column;
