@@ -77,7 +77,6 @@ section {
   background: url(./assets/img/Logo\ JMD\ PNG.png) no-repeat;
   background-size: cover;
   background-position: center center;
-  height: calc(100vh - 80px);
   z-index: 4;
 }
 
@@ -146,7 +145,7 @@ section {
 }
 @media (min-width: 1024px) {
   #club {
-    height: 550px;
+    height: 300px;
   }
 }
 
@@ -155,10 +154,11 @@ section {
   z-index: 1;
   width: 50%;
   height: 200px;
+  margin-top: 10px;
 }
 @media (min-width: 425px) {
   .video__yt {
-    height: 500px;
+    height: 200px;
   }
 }
 .video__yt h2 {
@@ -183,6 +183,8 @@ section {
 /*sobrenosotros*/
 .nuestrainfo h2 {
   text-align: left;
+  text-decoration: underline;
+  color: cadetblue;
 }
 .nuestrainfo p {
   text-align: center;
@@ -217,17 +219,18 @@ section {
 .contenedor {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   height: 100vh;
   z-index: 1;
   margin-top: 100px;
+  padding: 35px;
+  gap: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 768px) {
   .contenedor {
-    display: flex;
-    flex-direction: columns;
+    flex-direction: row;
   }
 }
 .contenedor figure {
@@ -298,28 +301,49 @@ section {
 }
 
 /*Tienda*/
-table {
-  display: inline-block;
-  gap: 15px;
-  text-align: center;
+.table {
+  margin-top: 15px;
+  background-color: whitesmoke;
+}
+.table .title {
+  display: grid;
+  justify-content: center;
+  background-color: red;
+}
+.table .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.table .row:hover {
+  background-color: red;
+}
+.table .row:nth-child(even) {
+  background-color: #dfdfdf;
+}
+.table .row:nth-child(even):hover {
+  background-color: crimson;
+}
+.table .header .row {
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+.table .header .row div {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+}
+.table .body .row {
+  padding: 10px;
+}
+.table .body .row div {
+  display: flex;
+  justify-content: center;
+}
+.table .page-active {
+  color: crimson;
 }
 
-table tr th {
-  width: 250px;
-  height: 50px;
-}
-
-table tr td {
-  width: 250px;
-  height: 100px;
-}
-
-@media only screen and (max-width: 400px) {
-  table {
-    width: 11%;
-    display: block;
-  }
-}
 .tienda {
   text-align: center;
   -webkit-animation: darkgreen 1500ms ease infinite;
@@ -345,73 +369,54 @@ table tr td {
   }
 }
 /*contacto*/
-.container-form {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+.hero-page {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/restaurante-page-bg.jpg) center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-hero-page {
+  color: #fff;
+  padding: 1rem;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.wrap-two-column {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  margin-top: 90px;
-}
-.container-form h2 {
-  margin-bottom: 15px;
-  font-size: 35px;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 
-.container-form p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 30px;
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-flow: column;
 }
 
-.container-form a {
-  font-size: 17px;
-  display: inline-block;
-  text-decoration: none;
-  width: 100%;
-  margin-bottom: 15px;
-  color: black;
-  font-weight: 700;
+.formulario input, .formulario textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.2rem;
 }
 
-.container-form a i {
-  color: orange;
-  margin-right: 10px;
-}
-
-.container-form form .campo, textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
-
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px;
-}
-
-.container-form .btn-enviar {
-  padding: 15px;
-  font-size: 16px;
+.formulario button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border: none;
-  outline: 0px;
-  background: orange;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 300ms ease;
-}
-
-.container-form .btn-enviar:hover {
-  margin-top: 10px;
-  background: #e39403;
+  padding: 0.5rem 1rem;
+  background-color: #FFC300;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 footer {
