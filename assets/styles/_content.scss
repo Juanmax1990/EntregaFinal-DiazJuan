@@ -250,10 +250,9 @@ section{
       
 }
 
-
 .contenedor{
     
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction:column;
     justify-content:space-around;
@@ -261,13 +260,21 @@ section{
     z-index: 1;
     margin-top: 100px;
     padding: 35px;
-    gap: 10px;
-    
+        
 }
 
+@media (min-width:375px){
+    .contenedor{
+    width: 100%;
+    
+    }
+    
+  }
+ 
 @media (min-width:768px){
     .contenedor{
     flex-direction: row;
+    width: 100%;
     }
     
   }
@@ -428,30 +435,70 @@ section{
   }
   
   .section{
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 1rem;
+    max-width: 120px;
+    margin: 0,5rem ;
+    padding: 0,5rem;
   }
     
   .wrap-two-column{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
+    column-gap: 0,5rem;
   }
   
   
   /* Formulario */
   .column-half{
-    width: 63%;
+    width: 100%;
+    margin-left: 28px;
   }
 
+  @media (min-width:375px){
+    .column-half{
+    width:100%;
+    margin-left: 30%;
+    }
+} 
+  @media (min-width:425px){
+    .column-half{
+    width:100%;
+    margin-left:42%;
+    }
+  }
   @media (min-width:768px){
     .column-half{
-    width:90%;
+    width:100%;
+    margin-left: 75%;
+    }
+    
+  }
+  @media (min-width:1024px){
+    .column-half{
+    width:100%;
+    margin-left: 140%;
     }
     
   }
 
+  .column-half1{
+    width: 50%;
+    display: none;
+  }
+
+  @media (min-width:768px){
+    .column-half1{
+    display: block;    
+    width:100%;
+    margin-left: 50%;
+    }
+}
+ @media (min-width:1024px){
+    .column-half1{
+    display: block;    
+    width:100%;
+    margin-left: 100%;
+    } 
+  }
   .formulario{
     display: flex;
     flex-flow: column;
