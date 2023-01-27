@@ -439,6 +439,12 @@ section {
     margin-left: 140%;
   }
 }
+@media (min-width: 1440px) {
+  .column-half {
+    width: 100%;
+    margin-left: 250%;
+  }
+}
 .column-half1 {
   width: 50%;
   display: none;
@@ -456,6 +462,13 @@ section {
     display: block;
     width: 100%;
     margin-left: 100%;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .column-half1 {
+    display: block;
+    width: 100%;
+    margin-left: 210%;
   }
 }
 .formulario {

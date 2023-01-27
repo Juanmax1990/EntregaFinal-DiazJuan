@@ -185,6 +185,8 @@ section{
     @media (min-width:1024px){
         height: 300px;
       }
+      
+   
   }
 
 .hometexto{
@@ -415,7 +417,6 @@ section{
       
 }
 
-
   /*contacto*/
 
   .hero-page{
@@ -477,7 +478,12 @@ section{
     width:100%;
     margin-left: 140%;
     }
-    
+  }
+  @media (min-width:1440px){
+    .column-half{
+    width:100%;
+    margin-left: 250%;
+    }
   }
 
   .column-half1{
@@ -498,6 +504,13 @@ section{
     width:100%;
     margin-left: 100%;
     } 
+    @media (min-width:1440px){
+        .column-half1{
+        display: block;    
+        width:100%;
+        margin-left:210%;
+        } 
+    }
   }
   .formulario{
     display: flex;
