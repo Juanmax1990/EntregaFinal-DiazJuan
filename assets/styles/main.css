@@ -243,12 +243,14 @@ section {
   .contenedor {
     flex-direction: row;
     width: 100%;
+    gap: 10px;
   }
 }
 .contenedor figure {
   position: relative;
+  gap: 10px;
   height: 220px;
-  width: 320px;
+  width: 340px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
