@@ -126,7 +126,7 @@ section{
    
     li a:hover, li a.active{
         background: none;
-        color: red;
+        color: map-get(c.$colores,"color");
         z-index: 4;
     }
     #check:checked ~ ul{
@@ -210,7 +210,7 @@ section{
     h2{
         text-align: left;
         text-decoration: underline;
-        color:lawngreen;
+        color:map-get(c.$colores,"color3");
     }
     p{
         text-align: center;
@@ -268,7 +268,7 @@ section{
 @media (min-width:375px){
     .contenedor{
     width: 100%;
-    height: 35%;    
+        
     }
     
   }
@@ -283,21 +283,25 @@ section{
 
 .contenedor figure{
     position:relative;
-    height: 250px;
-    width: 350px;
+    height: 220px;
+    width: 320px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     z-index: 1;
     
 }
-.contenedor figure img{
-    width: 100%;
-    height: 100%;
-    transition: all 400ms ease-out;
-    will-change: transform;
-    z-index: 1;
+.contenedor figure {
+    
+    img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+        z-index: 1;
+    }
 }
+
 .contenedor figure .capa{
     position: absolute;
     top: 0;
@@ -325,7 +329,7 @@ section{
     z-index: 1;
 }
 .contenedor figure .capa h3{
-    color: #fff;
+    color: map-get(c.$colores,"color2");
     font-weight: 400;
     margin-bottom: 120px;
     transition: all 400ms ease-out;
@@ -333,7 +337,7 @@ section{
      z-index: 1;
 }
 .contenedor figure .capa p{
-    color: #fff;
+    color: map-get(c.$colores,"color2");
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
@@ -348,7 +352,7 @@ section{
 
     text-align: center;
     animation: darkgreen 1500ms ease infinite;
-    background-color: white;
+    background-color: map-get(c.$colores,"fondo");
   }
 
   @keyframes darkgreen {
@@ -365,11 +369,11 @@ section{
 .table {
     
     margin-top: 15px;
-	background-color: whitesmoke;
+	background-color:map-get(c.$colores,"fondotabla");
     .title{
         display: grid;
         justify-content: center;
-        background-color: red;
+        background-color: map-get(c.$colores,"color");
     }
     .row {
         display: grid;
@@ -377,7 +381,7 @@ section{
     }
     
     .row:hover {
-        background-color: red;
+        background-color: map-get(c.$colores,"color");
     }
     
     .row:nth-child(even) {
@@ -385,20 +389,20 @@ section{
     }
     
     .row:nth-child(even):hover {
-        background-color: crimson;
+        background-color: map-get(c.$colores,"colorpage");
     }
         
     
     .header .row {
         padding: 10px;
-        background-color: cornflowerblue;
+        background-color: map-get(c.$colores,"colorrow");
     }
     
     .header .row div {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        color: white;
+        color: map-get(c.$colores,"fondo");
     }
     
     .body .row {
@@ -412,7 +416,7 @@ section{
     
     
     .page-active {
-        color: crimson;
+        color: map-get(c.$colores,"colorpage")n;
     }
       
 }
@@ -431,7 +435,7 @@ section{
 
  
   .wrap-hero-page{
-    color: #fff;
+    color: map-get(c.$colores,"color2");
     padding: 1rem;
   }
   
@@ -526,7 +530,7 @@ section{
     width: fit-content;
     border: none;
     padding: .5rem 1rem;
-    background-color: #FFC300;
-    color: #fff;
+    background-color: map-get(c.$colores,"color");
+    color: map-get(c.$colores,"color2");
     font-size: 1.1rem;
   }

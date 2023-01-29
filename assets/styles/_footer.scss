@@ -1,9 +1,8 @@
 @use '_commons' as d;
 
-footer{
-         
-    background-color: map-get(d.$colores,"footer");
+footer {
+
+    background-color: map-get(d.$colores, "footer");
     text-align: center;
     margin-top: 10px;
 }
-
